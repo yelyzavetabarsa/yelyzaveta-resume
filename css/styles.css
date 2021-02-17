@@ -1,0 +1,179 @@
+/* Coloors
+188FA7 blue munsell
+FBF5EF seashell
+A88FAC purple
+202030 raisin black
+0C1618 rich black
+*/
+
+/* Global styles 
+_________________________________________*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: #0C1618;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+img {
+    width: 300px;  
+}
+a {
+    color: #188FA7;
+}
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 1;
+}
+
+h1, h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 400;
+    margin: 0;
+
+}
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+h3 {
+        margin-bottom: 0;
+    }
+
+.item-details h3 + p {
+    font-style: italic;
+}
+
+.item-details h3 ~ p {
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1px dashed #202030;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-style: none;
+}
+
+/* Profile 
+_________________________________________*/
+header {
+    background-color: #202030;
+    color: #FBF5EF;
+}
+
+/* Projects 
+_________________________________________*/
+.projects {
+    background-color: #FBF5EF;
+}
+.projects a {
+    color:  #202030;
+}
+.projects .btn {
+    color: #FBF5EF;
+    background-color: #202030;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects a:hover {
+    background: rgba(32, 32, 48, 80%);
+}
+.project-item {
+   overflow: hidden;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+/* Work Experience
+_________________________________________*/
+.work-experience {
+    background-color: #A88FAC;
+}
+
+/* Education
+_________________________________________*/
+
+.education {
+    background-image: url(../images/education.jpg);
+    background-size: cover;
+    background-position: top left;
+    padding-bottom: 50px;
+}
+.education p {
+    width: 60%;
+}
+/* Contact info 
+_________________________________________*/
+footer {
+    background-color:  #0C1618;
+    color: #FBF5EF;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Responsive 
+_________________________________________*/
+
+@media screen and (min-width:750px) {
+    header, footer {
+        text-align: center;
+    }
+
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }  
+    .contact-list a {
+        padding: 5px;
+    }
+}
